@@ -1,38 +1,63 @@
-.App {
-  text-align: center;
+.list_wrapper {
+    display: flex;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.UserList__ul {
+    list-style: none;
+    width: 300px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.UserList__ul > li {
+    display: block;
+    padding: 10px;
+    border: 1px solid #e1e1e1;
+    margin-top: -1px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.UserList__ul > li:hover {
+    background-color: #e1e1e1;
 }
 
-.App-link {
-  color: #61dafb;
+.active {
+    background-color: #0f7ffa;
+    color: white;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.UserDetails__wrapper {
+    list-style: none;
+    width: 300px;
+}
+
+.UserDetails__wrapper > li {
+    border: 1px solid #e1e1e1;
+    margin-top: -1px;
+}
+
+.UserDetails__user-avatar {
+    padding-left: 0;
+    height: 300px;
+    background: url(hourglass-half.svg) no-repeat 50% 50%;
+    background-size: 30px;
+}
+
+.UserDetails__user-details_padding {
+    display: block;
+    padding: 10px;
+}
+
+.UserDetails__user-name {
+    font-size: 20px;
+    padding: 15px 10px 30px 10px;
+}
+
+.centered {
+    margin: 0 auto;
+}
+
+.UserDetails__wrapper {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
 }
