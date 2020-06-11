@@ -5,7 +5,7 @@ function UsersList(props) {
     const [activeID, setActiveID] = useState(null);
 
     useEffect(() => {
-        if (activeID !== null) props.onUserSelected(activeID);
+        if (activeID !== null) props.setUserID(activeID);
     }, [activeID]);
 
     const isActive = (id) => {
